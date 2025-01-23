@@ -1,5 +1,6 @@
 syntax = "proto3";
-package wheelsensor;
+package controllerMessage;
+option go_package = "github.com/seasea128/FYP-WebAPI/protobuf/controllerMessage";
 
 message DataReceived {
   uint16 distance = 1;
