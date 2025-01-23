@@ -2,7 +2,7 @@ syntax = "proto3";
 package controllerMessage;
 
 import "google/protobuf/timestamp.proto";
-option go_package = "github.com/seasea128/FYP-WebAPI/protobuf/controllerMessage";
+option go_package = "protobuf/controllerMessage";
 
 message DataReceived {
   int32 distance = 1;
