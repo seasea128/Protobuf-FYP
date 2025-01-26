@@ -7,5 +7,12 @@ option go_package = "protobuf/controllerMessage";
 message DataReceived {
   int32 distance = 1;
   int32 id = 2;
-  google.protobuf.Timestamp packet_time = 3;
+  string controller_id = 3;
+  google.protobuf.Timestamp packet_time = 4;
+}
+
+message Session {
+  int32 id = 1;
+  string controller_id = 2;
+  bool start = 3;
 }
