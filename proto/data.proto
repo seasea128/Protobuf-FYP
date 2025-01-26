@@ -1,7 +1,7 @@
 syntax = "proto3";
 package controllerMessage;
 
-import "google/protobuf/timestamp.proto";
+import "timestamp.proto";
 option go_package = "protobuf/controllerMessage";
 
 message DataReceived {
