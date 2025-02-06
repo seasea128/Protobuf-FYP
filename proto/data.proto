@@ -10,7 +10,7 @@ message DataReceived {
   int32 distance_lb = 3;
   int32 distance_rb = 4;
   string controller_id = 5;
-  string session_id = 6;
+  int32 session_id = 6;
   google.protobuf.Timestamp packet_time = 7;
 }
 
