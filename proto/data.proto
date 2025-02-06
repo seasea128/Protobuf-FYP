@@ -5,10 +5,13 @@ import "timestamp.proto";
 option go_package = "protobuf/controllerMessage";
 
 message DataReceived {
-  int32 distance = 1;
-  int32 id = 2;
-  string controller_id = 3;
-  google.protobuf.Timestamp packet_time = 4;
+  int32 distance_lt = 1;
+  int32 distance_rt = 2;
+  int32 distance_lb = 3;
+  int32 distance_rb = 4;
+  string controller_id = 5;
+  string session_id = 6;
+  google.protobuf.Timestamp packet_time = 7;
 }
 
 message Session {
