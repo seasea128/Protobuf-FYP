@@ -1,7 +1,7 @@
+
 syntax = "proto3";
 package controllerMessage;
 
-import "nanopb.proto";
 import "timestamp.proto";
 option go_package = "protobuf/controllerMessage";
 
@@ -21,5 +21,5 @@ message Session {
 message DataPoints {
   google.protobuf.Timestamp timestamp = 1;
   Session session = 2;
-  repeated Measurement measurement = 3 [ (nanopb).max_count = 100 ];
+  repeated Measurement measurement = 3;
 }
