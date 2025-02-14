@@ -1,4 +1,3 @@
-
 syntax = "proto3";
 package controllerMessage;
 
@@ -10,7 +9,6 @@ message Measurement {
   int32 distance_rt = 2;
   int32 distance_lb = 3;
   int32 distance_rb = 4;
-  bool measurement_sent = 5;
 }
 
 message Session {
@@ -21,5 +19,6 @@ message Session {
 message DataPoints {
   google.protobuf.Timestamp timestamp = 1;
   Session session = 2;
-  repeated Measurement measurement = 3;
+  bool measurement_sent = 3;
+  repeated Measurement measurement = 4;
 }
