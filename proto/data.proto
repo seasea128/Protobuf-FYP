@@ -25,9 +25,9 @@ enum PacketType {
 }
 
 message Packet {
-  PacketType type = 0;
-  optional DataPoints data = 1;
-  optional Session session = 2;
+  PacketType type = 1;
+  optional DataPoints data = 2;
+  optional Session session = 3;
 }
 
 message DataPoints {
