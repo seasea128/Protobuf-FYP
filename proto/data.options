@@ -1,2 +1,3 @@
 controllerMessage.Session.controller_id max_size:128
+controllerMessage.DataPoints.controller_id max_size:128
 controllerMessage.DataPoints.measurement max_count:100
