@@ -19,6 +19,17 @@ message Session {
   bool isActive = 4;
 }
 
+enum PacketType {
+  Session = 0;
+  Data = 1;
+}
+
+message Packet {
+  PacketType type = 0;
+  optional DataPoints data = 1;
+  optional Session session = 2;
+}
+
 message DataPoints {
   google.protobuf.Timestamp timestamp = 1;
   string controller_id = 2;
