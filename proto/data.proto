@@ -20,8 +20,8 @@ message Session {
 }
 
 enum PacketType {
-  Session = 0;
-  Data = 1;
+  SESSION = 0;
+  DATA = 1;
 }
 
 message Packet {
