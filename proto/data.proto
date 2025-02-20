@@ -33,6 +33,7 @@ message Packet {
 message DataPoints {
   google.protobuf.Timestamp timestamp = 1;
   string controller_id = 2;
-  bool data_points_sent = 3;
-  repeated Measurement measurement = 4;
+  int32 session_id = 3;
+  bool data_points_sent = 4;
+  repeated Measurement measurement = 5;
 }
